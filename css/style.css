@@ -13,12 +13,12 @@
 }
 
 header,
+section,
 aside,
 footer {
-    padding: 20px;
-    padding: 0;
     margin: 0;
-    color: white;
+    padding: 5px;
+    border-radius: 2px;
 }
 
 header {
@@ -33,7 +33,6 @@ header::before {
 section {
     grid-area: s;
     background-color: #ff5722;
-    padding: 5px;
 }
 
 aside {
