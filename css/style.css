@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* main body */
 .layout {
     height:100vh;
     display: grid;
@@ -53,6 +54,7 @@ footer::before {
     content: "footer";
 }
 
+/* inside section */
 .grid {
     background-color: #eee;
     padding: 40px;
