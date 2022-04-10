@@ -71,8 +71,10 @@ footer::before {
 .grid div {
     position: relative;
     border-bottom: 3px solid #ff460c;
+    border-radius: 5px;
     padding: 0 10px 10px 10px;
     overflow: hidden;
+
 }
 
 .grid div::after {
