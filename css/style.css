@@ -38,7 +38,7 @@ section {
 
 aside {
     grid-area: a;
-    background-color: #607d8b;
+    background-color: #faeb20;
 }
 
 aside::before {
@@ -95,6 +95,17 @@ h4 {
 h3,
 h4::first-letter {
     text-transform: capitalize;
+}
+
+article {
+    width: 100%;
+    height: auto;
+}
+
+.pic {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .bold {
