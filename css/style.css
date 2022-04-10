@@ -109,6 +109,11 @@ article {
     display: block;
 }
 
+.grid div:hover,
+.pic:hover {
+    filter: drop-shadow(8px 8px 10px gray);
+}
+
 .bold {
     font-weight: bolder;
     font-size: 1.1em;
