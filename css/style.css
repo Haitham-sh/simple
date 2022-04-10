@@ -85,11 +85,11 @@ footer::before {
 }
 
 h4 {
-    color: #aca9af;
+    color: gray;
 }
 
 .blk h4 {
-    color: #aca9af;
+    color: gray;
 }
 
 h3,
@@ -107,7 +107,7 @@ h4::first-letter {
 }
 
 .blk {
-    background-color: black;
+    background-color: #03a9f4;
     color: #eee;
 }
 
