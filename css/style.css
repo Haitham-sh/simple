@@ -81,10 +81,11 @@ footer::before {
 .grid div::after {
     content: "\"";
     position: absolute;
-    color: #aca9af;
+    color: gray;
     font-size: 2em;
     right: 5px;
-    bottom: -20px;
+    bottom: -17px;
+    transform: rotate(15deg);
 }
 
 h4 {
@@ -114,6 +115,7 @@ article {
 .grid div:hover,
 .pic:hover {
     filter: drop-shadow(8px 8px 10px gray);
+    transform: scale(1.05);
 }
 
 .bold {
