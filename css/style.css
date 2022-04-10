@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+.layout {
+    height:100vh;
+    display: grid;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "s s s s s s s s a a a a"
+        "f f f f f f f f f f f f";
+    grid-template-rows: 10% 1fr 10%;
+}
+
+header,
+aside,
+footer {
+    padding: 20px;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+header {
+    grid-area: h;
+    background-color: #03a9f4;
+}
+
+header::before {
+    content: "header";
+}
+
+section {
+    grid-area: s;
+    background-color: #ff5722;
+    padding: 5px;
+}
+
+aside {
+    grid-area: a;
+    background-color: #607d8b;
+}
+
+aside::before {
+    content: "aside";
+}
+
+footer {
+    grid-area: f;
+    background-color: #009688;
+}
+
+footer::before {
+    content: "footer";
+}
+
+.grid {
+    background-color: #eee;
+    padding: 40px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "o o t th"
+        "fo fi fi th"
+        "fo s s th"
+        "f f f f";
+    grid-template-rows: 50vh 50vh 50vh 50vh;
+    justify-content: center;
+}
+
+.grid div {
+    position: relative;
+    border-bottom: 3px solid #ff460c;
+    padding: 0 10px 10px 10px;
+    overflow: hidden;
+}
+
+.grid div::after {
+    content: "\"";
+    position: absolute;
+    color: #aca9af;
+    font-size: 2em;
+    right: 5px;
+    bottom: -20px;
+}
+
+h4 {
+    color: #aca9af;
+}
+
+.blk h4 {
+    color: #aca9af;
+}
+
+h3,
+h4::first-letter {
+    text-transform: capitalize;
+}
+
+.bold {
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.wit {
+    background-color: white;
+}
+
+.blk {
+    background-color: black;
+    color: #eee;
+}
+
+#one {
+    grid-area: o;
+}
+
+#two {
+    grid-area: t;
+}
+
+#three {
+    grid-area: th;
+}
+
+#four {
+    grid-area: fo;
+}
+
+#five {
+    grid-area: fi;
+}
+
+#six {
+    grid-area: s;
+}
