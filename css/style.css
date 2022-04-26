@@ -30,8 +30,8 @@ footer {
 /* header start */
 header {
     grid-area: h;
-    /* background-color: #03a9f4; */
-    background-image: url("/pic/pexels-katie-e-3662926.jpg");
+    background-color: #03a9f4;
+    background-image: url("pic/pexels-katie-e-3662926.jpg");
     background-size: cover;
 
 }
