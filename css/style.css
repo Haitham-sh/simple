@@ -31,7 +31,7 @@ footer {
 header {
     grid-area: h;
     background-color: #03a9f4;
-    background-image: url("pic/pexels-katie-e-3662926.jpg");
+    background-image: url("../pic/pexels-katie-e-3662926.jpg");
     background-size: cover;
 
 }
