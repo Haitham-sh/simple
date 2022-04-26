@@ -2,7 +2,6 @@
     box-sizing: border-box;
 }
 
-/* main body */
 .layout {
     height:100vh;
     display: grid;
@@ -10,10 +9,16 @@
         "h h h h h h h h h h h h"
         "s s s s s s s s a a a a"
         "f f f f f f f f f f f f";
-    grid-template-rows: 10% 1fr 10%;
+    grid-template-rows: 100% 1fr 10%;
 }
 
-header,
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 section,
 aside,
 footer {
@@ -22,15 +27,115 @@ footer {
     border-radius: 2px;
 }
 
+/* header start */
 header {
     grid-area: h;
-    background-color: #03a9f4;
+    /* background-color: #03a9f4; */
+    background-image: url("/pic/pexels-katie-e-3662926.jpg");
+    background-size: cover;
+
 }
 
-header::before {
-    content: "header";
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
 }
 
+header .logo img {
+    display: block;
+    width: 50px;
+}
+
+header .links {
+    position: relative;
+}
+
+header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+header .links .icon span {
+    background-color: black;
+    margin-bottom: 5px;
+    height: 2px;
+    width: 100%;
+}
+
+header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+}
+
+header ul {
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    background-color:rgba(0, 0, 0, 0.2);
+    padding: 0px;
+    margin-top: 10px;
+    display: none;
+    z-index: 1;
+    border-radius: 3px;
+}
+
+header ul::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    top: -20px;
+    right: 5px;
+}
+
+header .links:hover ul {
+    display: block;
+}
+
+header li {
+    padding: 15px;
+}
+
+header li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+header a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+header a:hover {
+    padding-left: 20px;
+}
+
+.name {
+    position: absolute;
+    top: 40%;
+}
+
+h1,
+h2 {
+    color: #03a9f4;
+    text-shadow: 1px 1px 2px black;
+}
+/* header end */
+
+/* main body */
 section {
     grid-area: s;
     background-color: #ff5722;
@@ -59,7 +164,7 @@ footer::before {
     background-color: #eee;
     padding: 40px;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-areas: 
         "o o t th"
         "fo fi fi th"
